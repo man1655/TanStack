@@ -1,4 +1,5 @@
 import {QueryClientProvider,QueryClient} from '@tanstack/react-query'
+import { ReactQueryDevtools } from '@tanstack/react-query-devtools'
 import './App.css'
 import Example from './Example';
 
@@ -7,6 +8,7 @@ function App() {
   return (
     <>
       <QueryClientProvider client={queryClient}>
+        <ReactQueryDevtools initialIsOpen={false} />
         <Example/>
       </QueryClientProvider>
     </>
