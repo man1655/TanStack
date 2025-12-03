@@ -12,6 +12,7 @@ function Example() {
     queryKey:['users'],
     queryFn:Details
   })
+
   if(isLoading) return <h1>Loading</h1>
   if(isError) return <h1>Error</h1>
   return (
